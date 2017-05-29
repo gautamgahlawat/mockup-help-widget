@@ -98,9 +98,10 @@ a:hover,a:focus{
 .tab .nav-tabs li a:before,
 .tab .nav-tabs li a:after{
     content: "";
-    border-top: 39.5px solid transparent;
+    border-top: 42px solid transparent;
     position: absolute;
-    top: 0px;
+    top: -2px;
+    border-radius: 8px 8px 0 0;
 }
 
 .tab .nav-tabs li a:before{
