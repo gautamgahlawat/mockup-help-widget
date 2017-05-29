@@ -252,7 +252,7 @@ html {
 
 #widget-menu{
     /*width: 100%;*/
-    height:52%;
+    height:50%;
     position: fixed;
     top: auto;
     right: 0;
@@ -379,7 +379,7 @@ a:hover,a:focus{
 }
 
 .grid-divider {
-    padding: 25px 0;
+    padding: 30px 0 55px 0;
 }
 
 /*@media ( min-width: 768px ) {
@@ -405,7 +405,7 @@ a:hover,a:focus{
 /*Section 1 Mail Us***********************/
 
 form.form-horizontal {
-    padding: 15px 20px 20px 20px;
+    padding: 15px 20px 30px 20px;
 }
 
 div.alert {
@@ -508,7 +508,7 @@ div.faq-item-data {
 div.faq-item-data>p,
 div.faq-item-data>i{
     line-height: 1.2em;
-    margin: 0 0 1px;
+    /*margin: 0 0 1px;*/
     color: #4B6EC0;
 }
 

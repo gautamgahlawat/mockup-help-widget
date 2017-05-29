@@ -45,7 +45,7 @@
     <div class="container-fluid">
         <div class="row main-row">
             <!-- <div class="col-md-12"> -->
-                <div id="widget-menu"class="tab widget-menu" role="tabpanel">
+                <div id="widget-menu" class="tab " role="tabpanel">
 
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
@@ -62,12 +62,12 @@
 
 
                     <!-- Tabs-Content Start************** -->
-                    <div class="tab-content tabs">
+                    <div class="tab-content tabs widget-menu">
 
                         <!-- Section 1 -->
                         <div class="tab-pane fade" id="Section1" role="tabpanel">
                             <div class="row">
-                                <div class="alert alert-success alert-dismissable fade in">
+                                <div id="alert" class="alert alert-success alert-dismissable fade in">
                                     <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
                                     <strong> ✔ Success!</strong> Thanks for reaching out! We will get back to you soon.
                                 </div>
@@ -130,38 +130,38 @@
                                             <!--second row items-->
                                             <div class="faq-item">
                                                 <div class="faq-item-data">
-                                                    <i aria-hidden="true" class="fa fa-folder-open" style="font-size:1.2em;"></i>
+                                                    <i aria-hidden="true" class="fa fa-folder-open" style="font-size:1.5em;"></i>
                                                     <p>Sharing Openings</p>
                                                 </div>
 
                                             </div>
                                             <div class="faq-item">
                                                 <div class="faq-item-data">
-                                                    <i aria-hidden="true" class="glyphicon glyphicon-pushpin" style="font-size:1.2em;"></i>
+                                                    <i aria-hidden="true" class="glyphicon glyphicon-pushpin" style="font-size:1.5em;"></i>
                                                     <p>Managing Openings</p>
                                                 </div>
                                             </div>
                                             <div class="faq-item">
                                                 <div class="faq-item-data">
-                                                    <i aria-hidden="true" class="fa fa-address-card-o" style="font-size:1.2em;"></i>
+                                                    <i aria-hidden="true" class="fa fa-address-card-o" style="font-size:1.5em;"></i>
                                                     <p>Managing Candidates</p>
                                                 </div>
                                             </div>
                                             <div class="faq-item">
                                                 <div class="faq-item-data">
-                                                    <i aria-hidden="true" class="fa fa-user-circle-o" style="font-size:1.2em;"></i>
+                                                    <i aria-hidden="true" class="fa fa-user-circle-o" style="font-size:1.5em;"></i>
                                                     <p>Account Management</p>
                                                 </div>
                                             </div>
                                             <div class="faq-item">
                                                 <div class="faq-item-data">
-                                                    <i aria-hidden="true" class="fa fa-folder" style="font-size:1.2em;"></i>
+                                                    <i aria-hidden="true" class="fa fa-folder" style="font-size:1.5em;"></i>
                                                     <p>Sourcing Candidates</p>
                                                 </div>
                                             </div>
                                             <div class="faq-item">
                                                 <div class="faq-item-data">
-                                                    <i aria-hidden="true" class="fa fa-folder" style="font-size:1.2em;"></i>
+                                                    <i aria-hidden="true" class="fa fa-folder" style="font-size:1.5 em;"></i>
                                                     <p>Reporting</p>
                                                 </div>
                                             </div>
@@ -176,6 +176,8 @@
                             <div class="row grid-divider">
                                 <h3>Section 3</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam faucibus lorem at eros consectetur lobortis. Maecenas nec nibh congue, placerat sem id, rutrum velit. Phasellus porta enim at facilisis condimentum. Maecenas pharetra dolor vel elit tempor pellentesque sed sed eros. Aenean vitae mauris tincidunt, imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna aliquam, ornare eros vel, malesuada lorem. Nullam imperdiet orci semper, rhoncus ligula. Vivamus scelerisque.</p>
                             </div>
 
                         </div>
@@ -225,6 +227,10 @@
 
     $('#chat-section').on('click', function() {
         $('#widget-menu').removeClass('clicked');
+    });
+
+    $('#alert').on('click', function() {
+        $(this).slideUp();
     });
 
     </script>
