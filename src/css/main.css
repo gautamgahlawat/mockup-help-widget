@@ -283,7 +283,7 @@ a:hover,a:focus{
     position: relative;
     z-index: 1000;
     padding: 0 15px;
-    border-bottom: 4px solid #4d4d4d;
+    border-bottom: 0;
 }
 
 .tab .nav-tabs li{
@@ -294,7 +294,7 @@ a:hover,a:focus{
     color: #fff;
     padding: 10px 20px;
     margin-right: 10px;
-    background: #4d4d4d;
+    background: #858585;
     text-shadow: 1px 1px 2px #000;
     border: none;
     border-radius: 0;
@@ -304,7 +304,7 @@ a:hover,a:focus{
     transition: all 0.3s ease 0s;
 }
 .tab .nav-tabs li a:hover{
-    background: #4d4d4d;
+    background: #858585;
     opacity: 0.8;
     border-radius: 3px 3px 0 0;
 }
@@ -318,7 +318,7 @@ a:hover,a:focus{
 .tab .nav-tabs li.active a:hover,
 .tab .nav-tabs li.active a:focus{
     color: #fff;
-    background: #4d4d4d;
+    background: #858585;
     border: none;
     border-radius: 3px 3px 0 0;
 }
@@ -328,16 +328,16 @@ a:hover,a:focus{
     content: "";
     border-top: 42px solid transparent;
     position: absolute;
-    top: -0.2px;
+    top: -1px;
 }
 
 .tab .nav-tabs li a:before{
-    border-right: 18px solid #4d4d4d;
+    border-right: 18px solid #858585;
     left: -16px;
 }
 
 .tab .nav-tabs li a:after{
-    border-left: 18px solid #4d4d4d;
+    border-left: 18px solid #858585;
     right: -16px;
 }
 .tab .nav-tabs li a i,
@@ -363,14 +363,15 @@ a:hover,a:focus{
 }
 .tab .tab-content{
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIvPjxzdG9wIG9mZnNldD0iMyUiIHN0b3AtY29sb3I9IiNkZGRkZGQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-    padding: 10px 25px;
+    padding: 0 25px;
+    border-top: 2px solid #858585;
     /*background: #fff;*/
     font-size: 16px;
     color: #6c6c6c;
     line-height: 25px;
-    -webkit-box-shadow: -3px -9px 17px -2px rgba(153,153,153,1);
-    -moz-box-shadow: -3px -9px 17px -2px rgba(153,153,153,1);
-    box-shadow: -3px -9px 17px -2px rgba(153,153,153,1);
+    -webkit-box-shadow: -1px -1px 9px 2px rgba(153,153,153,1);
+    -moz-box-shadow: -1px -1px 9px 2px rgba(153,153,153,1);
+    box-shadow: -1px -1px 9px 2px rgba(153,153,153,1);
 }
 .tab .tab-content h3{
     font-size: 24px;
