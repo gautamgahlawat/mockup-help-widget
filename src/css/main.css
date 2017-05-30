@@ -155,18 +155,18 @@ a:hover,a:focus{
 }
 
 .grid-divider {
-    padding: 25px 0 55px 0;
+    padding: 35px 0 55px 0;
 }
 
 
 /*Section 1 Mail Us***********************/
 
 form.form-horizontal {
-    padding: 25px 20px 40px 20px;
+    padding: 30px 20px 40px 20px;
 }
 
 div.alert {
-    margin: 5px 20px 0px 20px;
+    margin: 10px 20px 0px 20px;
     padding: 5px 20px;
 }
 
