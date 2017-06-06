@@ -11,8 +11,9 @@
 
     <link href="apple-touch-icon.png" rel="apple-touch-icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap-theme.min.css" rel="stylesheet"> -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link href="css/main.css" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">
     </script>
@@ -39,47 +40,46 @@
             <div id="widget-menu" class="tab " role="tabpanel">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
+                    <!-- <li role="presentation" class="close">
+                        <a id="close-tab" aria-controls="chat" href="" role="tab"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </li> -->
                     <li role="presentation">
-                        <a id="mail-section" aria-controls="home" data-toggle="tab" href="#Section1" role="tab"><i class="fa fa-envelope-o"></i><span>Mail Us</span></a>
+                        <a id="mail-section" aria-controls="mail" data-toggle="tab" href="#Section1" role="tab"><i class="fa fa-envelope-o"></i><span> Mail Us</span></a>
                     </li>
                     <li role="presentation">
-                        <a id="faq-section" aria-controls="profile" data-toggle="tab" href="#Section2" role="tab"><i class="fa fa-search"></i><span>FAQ</span></a>
+                        <a id="faq-section" aria-controls="faq" data-toggle="tab" href="#Section2" role="tab"><i class="fa fa-search"></i><span> FAQ</span></a>
                     </li>
                     <li class="active" role="presentation">
-                        <a id="chat-section" aria-controls="messages" data-toggle="tab" href="#Section3" role="tab"><i class="fa fa-commenting-o"></i><span>Live Chat</span></a>
+                        <a id="chat-section" aria-controls="chat" data-toggle="tab" href="#Section3" role="tab"><i class="fa fa-commenting-o"></i><span> Live Chat</span></a>
                     </li>
+                    <div class="close-tab"><i class="fa fa-times close-icon" aria-hidden="true"></i></div>
                 </ul><!-- Tab panes -->
 
                 <!-- Tabs-Content Start************** -->
-                <div class="tab-content tabs widget-menu">
+                <div class="tab-content tabs">
 
                     <!-- Section 1 -->
                     <div class="tab-pane fade" id="Section1" role="tabpanel">
                         <div class="row">
-                            <div id="alert" class="alert alert-success alert-dismissable fade in">
-                                <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                                <strong> ✔ Success!</strong> Thanks for reaching out! We will get back to you soon.
-                            </div>
-                            <form class="form-horizontal" role="form" method="post" action="index.php">
-                                <div class="form-group">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Firstname" value="support@recruiterbox.com" readonly>
-                                    </div>
+                            <form role="form" method="post" action="">
+                                <div id="alert" class="alert alert-success alert-dismissable">
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                                    <strong> ✔ Success!</strong> Thanks for reaching out! We will get back to you soon.
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-12">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Subject" value="">
-                                    </div>
+                                    <label for="form-control" class="mail-to">To</label>
+                                    <input type="text" class="form-control mail-to" id="name" name="name" placeholder="Firstname" value="support@recruiterbox.com" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-12">
-                                        <textarea class="form-control" rows="4" name="message" placeholder="Message.."></textarea>
-                                    </div>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Subject" value="">
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-10 col-sm-offset-2">
-                                        <input id="submit" name="submit" type="submit" value="submit" class="btn btn-primary pull-right">
-                                    </div>
+                                    <textarea class="form-control" rows="4" name="message" placeholder="Message..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" name="file" id="file" class="inputfile form-control" />
+                                    <label for="file" class="file-input"><i class="fa fa-paperclip" aria-hidden="true"><span> Attach files</span></i></label>
+                                    <input id="submit" name="submit" type="submit" value="Send Mail" class="btn btn-primary pull-right">
                                 </div>
                             </form>
                         </div>
@@ -161,7 +161,7 @@
     <!-- Widget-menu Ends -->
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
@@ -173,7 +173,7 @@
 
     <script>
     $('#mail-section').on('click', function() {
-        // console.log("pressed");
+        console.log("pressed");
         $('#widget-menu').addClass('clicked');
     });
 
@@ -185,9 +185,13 @@
         $('#widget-menu').removeClass('clicked');
     });
 
-    $('#alert').on('click', function() {
-        $(this).slideUp();
-    });
+    $('.close-icon').on('click', function() {
+        confirm('Are you sure?');
+        $('.tab').remove();
+    })
+    // $('#alert').on('click', function() {
+    //     $(this).slideUp();
+    //});
 
     </script>
 
