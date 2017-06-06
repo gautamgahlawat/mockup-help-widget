@@ -149,8 +149,8 @@ div.close-tab {
     display: inline-block;
     background: #565656;
     width: 32px;
-    height: 32px;
-    top: 13.5px;
+    height: 33px;
+    top: 14px;
     right: -25px;
     z-index: -2;
     cursor:pointer
