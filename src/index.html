@@ -186,8 +186,10 @@
     });
 
     $('.close-icon').on('click', function() {
-        confirm('Are you sure?');
-        $('.tab').remove();
+        var result = confirm('Are you sure?');
+        if(result){
+            $('.tab').remove();
+        }
     })
     // $('#alert').on('click', function() {
     //     $(this).slideUp();
